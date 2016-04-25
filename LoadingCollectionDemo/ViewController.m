@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BallSportVC.h"
 #import "WaterWaveVC.h"
+#import "HourGlassViewController.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,7 @@
     _myTable.dataSource = self;
     [self.view addSubview:_myTable];
     
-    _dataArr = @[@"BallSport",@"WaterWave"];
+    _dataArr = @[@"BallSport",@"WaterWave",@"HourGlass"];
     
 //    [self buildFrostedGlass];
     
@@ -60,6 +61,11 @@
     if (indexPath.row == 1) {
         WaterWaveVC *waterVC = [[WaterWaveVC alloc]init];
         [self.navigationController pushViewController:waterVC animated:YES];
+        return;
+    }
+    if (indexPath.row == 2) {
+        HourGlassViewController *hgVC =[[ HourGlassViewController alloc]init];
+        [self.navigationController pushViewController:hgVC animated:YES];
         return;
     }
 }

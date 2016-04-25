@@ -44,6 +44,8 @@
 		FB04E66E1CCA123F0021703A /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB04E6421CCA123F0021703A /* POPSpringAnimation.mm */; };
 		FB04E66F1CCA123F0021703A /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB04E6461CCA123F0021703A /* POPVector.mm */; };
 		FB04E6701CCA123F0021703A /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB04E6491CCA123F0021703A /* TransformationMatrix.cpp */; };
+		FB0F8F521CCE050D00F4268F /* HourGlassView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F8F511CCE050D00F4268F /* HourGlassView.m */; };
+		FB0F8F551CCE052C00F4268F /* HourGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F8F541CCE052C00F4268F /* HourGlassViewController.m */; };
 		FB44D1D31CC87FB3000AEAB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D21CC87FB3000AEAB2 /* main.m */; };
 		FB44D1D61CC87FB3000AEAB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D51CC87FB3000AEAB2 /* AppDelegate.m */; };
 		FB44D1D91CC87FB3000AEAB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D81CC87FB3000AEAB2 /* ViewController.m */; };
@@ -142,6 +144,10 @@
 		FB04E6491CCA123F0021703A /* TransformationMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationMatrix.cpp; sourceTree = "<group>"; };
 		FB04E64A1CCA123F0021703A /* TransformationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationMatrix.h; sourceTree = "<group>"; };
 		FB04E64B1CCA123F0021703A /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
+		FB0F8F501CCE050D00F4268F /* HourGlassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourGlassView.h; path = hourglass/HourGlassView.h; sourceTree = "<group>"; };
+		FB0F8F511CCE050D00F4268F /* HourGlassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassView.m; path = hourglass/HourGlassView.m; sourceTree = "<group>"; };
+		FB0F8F531CCE052C00F4268F /* HourGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourGlassViewController.h; path = hourglass/HourGlassViewController.h; sourceTree = "<group>"; };
+		FB0F8F541CCE052C00F4268F /* HourGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassViewController.m; path = hourglass/HourGlassViewController.m; sourceTree = "<group>"; };
 		FB44D1CD1CC87FB3000AEAB2 /* LoadingCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB44D1D11CC87FB3000AEAB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB44D1D21CC87FB3000AEAB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -323,6 +329,17 @@
 			path = WebCore;
 			sourceTree = "<group>";
 		};
+		FB0F8F4F1CCE04E600F4268F /* hourglass */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F8F501CCE050D00F4268F /* HourGlassView.h */,
+				FB0F8F511CCE050D00F4268F /* HourGlassView.m */,
+				FB0F8F531CCE052C00F4268F /* HourGlassViewController.h */,
+				FB0F8F541CCE052C00F4268F /* HourGlassViewController.m */,
+			);
+			name = hourglass;
+			sourceTree = "<group>";
+		};
 		FB44D1C41CC87FB3000AEAB2 = {
 			isa = PBXGroup;
 			children = (
@@ -351,10 +368,11 @@
 				FB44D1D51CC87FB3000AEAB2 /* AppDelegate.m */,
 				FB44D1D71CC87FB3000AEAB2 /* ViewController.h */,
 				FB44D1D81CC87FB3000AEAB2 /* ViewController.m */,
+				FB44D1F91CC8A3FE000AEAB2 /* ball */,
+				FB0F8F4F1CCE04E600F4268F /* hourglass */,
 				FBAE12511CC8DBA9000387BD /* wave */,
 				FB04E5FE1CCA123F0021703A /* Configuration */,
 				FB04E6131CCA123F0021703A /* pop */,
-				FB44D1F91CC8A3FE000AEAB2 /* ball */,
 				FB44D1F61CC880D0000AEAB2 /* images */,
 				FB44D1DA1CC87FB3000AEAB2 /* Main.storyboard */,
 				FB44D1DD1CC87FB3000AEAB2 /* Images.xcassets */,
@@ -551,6 +569,7 @@
 				FB44D2051CC8B9D1000AEAB2 /* BallSportVC.m in Sources */,
 				FBAE12571CC8DBF8000387BD /* WaterView.m in Sources */,
 				FB04E66C1CCA123F0021703A /* POPMath.mm in Sources */,
+				FB0F8F521CCE050D00F4268F /* HourGlassView.m in Sources */,
 				FB04E6631CCA123F0021703A /* POPAnimationRuntime.mm in Sources */,
 				FB04E6611CCA123F0021703A /* POPAnimationEvent.mm in Sources */,
 				FB04E6641CCA123F0021703A /* POPAnimationTracer.mm in Sources */,
@@ -562,6 +581,7 @@
 				FB04E66B1CCA123F0021703A /* POPLayerExtras.mm in Sources */,
 				FB04E6691CCA123F0021703A /* POPDecayAnimation.mm in Sources */,
 				FB04E6651CCA123F0021703A /* POPAnimator.mm in Sources */,
+				FB0F8F551CCE052C00F4268F /* HourGlassViewController.m in Sources */,
 				FBAE12541CC8DBD4000387BD /* WaterWaveVC.m in Sources */,
 				FB04E66F1CCA123F0021703A /* POPVector.mm in Sources */,
 				FB04E6681CCA123F0021703A /* POPCustomAnimation.mm in Sources */,
