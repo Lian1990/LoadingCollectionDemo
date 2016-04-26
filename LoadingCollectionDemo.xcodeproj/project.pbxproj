@@ -46,6 +46,8 @@
 		FB04E6701CCA123F0021703A /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB04E6491CCA123F0021703A /* TransformationMatrix.cpp */; };
 		FB0F8F521CCE050D00F4268F /* HourGlassView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F8F511CCE050D00F4268F /* HourGlassView.m */; };
 		FB0F8F551CCE052C00F4268F /* HourGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F8F541CCE052C00F4268F /* HourGlassViewController.m */; };
+		FB3F0DD91CCF4BA80017D8CB /* GrowEqualizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F0DD81CCF4BA80017D8CB /* GrowEqualizeViewController.m */; };
+		FB3F0DDC1CCF4BC70017D8CB /* GrowEqualizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F0DDB1CCF4BC70017D8CB /* GrowEqualizeView.m */; };
 		FB44D1D31CC87FB3000AEAB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D21CC87FB3000AEAB2 /* main.m */; };
 		FB44D1D61CC87FB3000AEAB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D51CC87FB3000AEAB2 /* AppDelegate.m */; };
 		FB44D1D91CC87FB3000AEAB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44D1D81CC87FB3000AEAB2 /* ViewController.m */; };
@@ -148,6 +150,10 @@
 		FB0F8F511CCE050D00F4268F /* HourGlassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassView.m; path = hourglass/HourGlassView.m; sourceTree = "<group>"; };
 		FB0F8F531CCE052C00F4268F /* HourGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourGlassViewController.h; path = hourglass/HourGlassViewController.h; sourceTree = "<group>"; };
 		FB0F8F541CCE052C00F4268F /* HourGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassViewController.m; path = hourglass/HourGlassViewController.m; sourceTree = "<group>"; };
+		FB3F0DD71CCF4BA80017D8CB /* GrowEqualizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowEqualizeViewController.h; path = grow/GrowEqualizeViewController.h; sourceTree = "<group>"; };
+		FB3F0DD81CCF4BA80017D8CB /* GrowEqualizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowEqualizeViewController.m; path = grow/GrowEqualizeViewController.m; sourceTree = "<group>"; };
+		FB3F0DDA1CCF4BC70017D8CB /* GrowEqualizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowEqualizeView.h; path = grow/GrowEqualizeView.h; sourceTree = "<group>"; };
+		FB3F0DDB1CCF4BC70017D8CB /* GrowEqualizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowEqualizeView.m; path = grow/GrowEqualizeView.m; sourceTree = "<group>"; };
 		FB44D1CD1CC87FB3000AEAB2 /* LoadingCollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingCollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB44D1D11CC87FB3000AEAB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB44D1D21CC87FB3000AEAB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -340,6 +346,17 @@
 			name = hourglass;
 			sourceTree = "<group>";
 		};
+		FB3F0DD61CCF4B5B0017D8CB /* growEqualize */ = {
+			isa = PBXGroup;
+			children = (
+				FB3F0DD71CCF4BA80017D8CB /* GrowEqualizeViewController.h */,
+				FB3F0DD81CCF4BA80017D8CB /* GrowEqualizeViewController.m */,
+				FB3F0DDA1CCF4BC70017D8CB /* GrowEqualizeView.h */,
+				FB3F0DDB1CCF4BC70017D8CB /* GrowEqualizeView.m */,
+			);
+			name = growEqualize;
+			sourceTree = "<group>";
+		};
 		FB44D1C41CC87FB3000AEAB2 = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +385,7 @@
 				FB44D1D51CC87FB3000AEAB2 /* AppDelegate.m */,
 				FB44D1D71CC87FB3000AEAB2 /* ViewController.h */,
 				FB44D1D81CC87FB3000AEAB2 /* ViewController.m */,
+				FB3F0DD61CCF4B5B0017D8CB /* growEqualize */,
 				FB44D1F91CC8A3FE000AEAB2 /* ball */,
 				FB0F8F4F1CCE04E600F4268F /* hourglass */,
 				FBAE12511CC8DBA9000387BD /* wave */,
@@ -564,10 +582,12 @@
 				FB04E6621CCA123F0021703A /* POPAnimationExtras.mm in Sources */,
 				FB04E6671CCA123F0021703A /* POPCGUtils.mm in Sources */,
 				FB04E6701CCA123F0021703A /* TransformationMatrix.cpp in Sources */,
+				FB3F0DD91CCF4BA80017D8CB /* GrowEqualizeViewController.m in Sources */,
 				FB04E66A1CCA123F0021703A /* POPGeometry.mm in Sources */,
 				FB44D1D91CC87FB3000AEAB2 /* ViewController.m in Sources */,
 				FB44D2051CC8B9D1000AEAB2 /* BallSportVC.m in Sources */,
 				FBAE12571CC8DBF8000387BD /* WaterView.m in Sources */,
+				FB3F0DDC1CCF4BC70017D8CB /* GrowEqualizeView.m in Sources */,
 				FB04E66C1CCA123F0021703A /* POPMath.mm in Sources */,
 				FB0F8F521CCE050D00F4268F /* HourGlassView.m in Sources */,
 				FB04E6631CCA123F0021703A /* POPAnimationRuntime.mm in Sources */,

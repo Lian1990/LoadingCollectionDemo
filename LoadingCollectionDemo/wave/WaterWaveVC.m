@@ -24,9 +24,9 @@
 }
 -(void)viewDidLoad
 {
-//    [self loadData];
-//    [self waterWaveShow];
-    [self webLoad];
+    [self loadData];
+    [self waterWaveShow];
+//    [self webLoad];
     
 }
 -(void)webLoad
